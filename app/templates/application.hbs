@@ -13,7 +13,7 @@
       </a>
     </div>
   </div>
-  <ul>
+  <ul class='space-y-4'>
     {{#each
       (array
         (hash title='Black Dog' band='Led Zeppelin' rating=3)
@@ -21,9 +21,11 @@
         (hash title='The Pretender' band='Foo Fighters' rating=2)
       ) as |song|
     }}
-      <li class='leading-loose'>
-        {{song.title}} by {{song.band}}
-        <span class='floa-right'>
+      <li class='leading-loose flex justify-between bg-blue-700'>
+        <span>
+          {{song.title}} by {{song.band}}
+        </span>
+        <span>
           ({{song.rating}})
         </span>
       </li>
