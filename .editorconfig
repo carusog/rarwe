@@ -15,5 +15,8 @@ indent_size = 2
 [*.hbs]
 insert_final_newline = false
 
+[*.html]
+indent_size = 4
+
 [*.{diff,md}]
 trim_trailing_whitespace = false
