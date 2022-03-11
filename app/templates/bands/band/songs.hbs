@@ -6,7 +6,8 @@
       <li class='mb-2'>
         {{song.title}}
         <span class='float-right'>
-          <StarRating @rating={{song.rating}} />
+          {{! set object property [value || value the function is called with] }}
+          <StarRating @rating={{song.rating}} @onUpdate={{set song 'rating'}} />
         </span>
       </li>
     {{/each}}
